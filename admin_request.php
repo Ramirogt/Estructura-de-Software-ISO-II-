@@ -11,7 +11,7 @@ require 'update_slots.php';
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>parqueadero</title>
+    <title>Parqueo Unifranz</title>
     <link rel="icon" href="assets/img/ny.jpg" />
 
     <!-- Bootstrap core CSS -->
@@ -39,7 +39,7 @@ require 'update_slots.php';
       <header class="header black-bg">
 
             <!--logo start-->
-            <a href="index.php" class="logo"><b>Parqueadero</b></a>
+            <a href="index.php" class="logo"><b>Parqueo Unifranz</b></a>
             <!--logo end-->
 
         </header>
@@ -54,7 +54,7 @@ require 'update_slots.php';
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
 
-                    <p class="centered"><a href="#"><img src="assets/img/assistant-144.png" class="img-circle" width="60"></a></p>
+                    <p class="centered"><a href="#"><img src="assets/img/admin.jpg" class="img-circle" width="60"></a></p>
                     <h5 class="centered"> <?php echo $_SESSION['email']; ?></h5>
 
                   <li class="mt">
@@ -79,12 +79,12 @@ require 'update_slots.php';
 
 	                  <div class="col-md-12">
 	                  	  <div class="content-panel">
-<h2>Ver los Requerimientos</h2>
+<h2>Vista de los Usuarios</h2>
 
               <table class="table table-bordered" >
                       <thead>
                       <tr>
-                      <th>S.N </th>
+                      <th>N° </th>
                       <th>Parqueadero</th>
                       <th>Espacios </th>
                       <th>Hora</th>
@@ -185,7 +185,7 @@ if(isset($_GET['delete']))
              $(".table").DataTable({
                  dom: 'Bflirt',
                  buttons: [
-                     'excel','pdf', 'print'
+                     'print'
                  ]
              });
           }

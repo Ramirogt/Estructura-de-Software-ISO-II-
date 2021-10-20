@@ -77,7 +77,7 @@ require 'mysqlConnect.php';
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
     <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
     <script>
-        $.backstretch("assets/img/Smp.jpg", {speed: 500});
+        $.backstretch("assets/img/loginusuario.png", {speed: 500});
     </script>
 
   <?php

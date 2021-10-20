@@ -84,7 +84,7 @@ require 'update_slots.php';
 	                  	  <div class="content-panel">
 
               <table class="table table-bordered">
-                      <tr><h2> Ver Parqueaderos</h2></tr>
+                      <tr><h2> Parqueo Unifranz</h2></tr>
                       <tr align="center">
                       <th>S.N </th>
                       <th>Ubicacion </th>
@@ -92,8 +92,8 @@ require 'update_slots.php';
                       <th>Nombre </th>
                       <th>Espacios </th>
                       <th>Precio </th>
-                      <th>Borrar </th>
                       <th>Editar </th>
+                      <th>Borrar </th>
                       </tr>
 <?php
 $sel="select * from parkings";
@@ -102,7 +102,7 @@ $i=0;
 while($row=mysqli_fetch_array($run)){
 $id=$row['id'];
 $location=$row['location'];
-$street=$row['street'];
+
 $name=$row['name'];
 $slot=$row['slot'];
 $price=$row['price'];
@@ -112,7 +112,7 @@ $i++;
 <tr>
 <td><?php echo $i; ?></td>
 <td><?php echo $location; ?></td>
-<td><?php echo $street; ?></td>
+
 <td><?php echo $name; ?></td>
 <td><?php echo $slot; ?></td>
 <td><?php echo $price; ?></td>

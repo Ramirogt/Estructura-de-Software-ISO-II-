@@ -10,7 +10,7 @@ require 'update_slots.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Portal Web Parqueadero</title>
+    <title>Parqueo Unifranz</title>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -134,7 +134,7 @@ $(".modal-transparent").on('hidden.bs.modal', function () {
          <div class="col-md-4"></div>
          <div class="col-md-4">
                <div class="page-header">
-                 <center><h1 class="colors">Parqueadero Web</h1></center>
+                 <center><h1 class="colors">Parqueo Unifranz</h1></center>
                </div>
          </div>
          <div class="col-md-4"></div>
@@ -148,13 +148,13 @@ $(".modal-transparent").on('hidden.bs.modal', function () {
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <center><h4 class="modal-title" style="color:#225556;">All form fields are required.</h4></center>
+          <center><h4 class="modal-title" style="color:#225556;">Rellena todos los campos.</h4></center>
         </div>
         <div class="modal-body">
           <form  id="regForm" action="register.php" method="POST" enctype="multipart/form-data">
 
   <div class="form-group">
-      <label for="name" >Name:</label>
+      <label for="name" >Nombre:</label>
       <input type="text" name="name" id="name"  class="text ui-widget-content ui-corner-all">
   </div>
 
@@ -165,16 +165,16 @@ $(".modal-transparent").on('hidden.bs.modal', function () {
   </div>
 
    <div class="form-group">
-      <label for="password">Password</label>
+      <label for="password">Contraseña</label>
      <input type="password" id="password" name="password" placeholder="" class="text ui-widget-content ui-corner-all" required>
   </div>
 
    <div class="form-group">
-      <label for="password">Confirm Password</label>
+      <label for="password">Confirmar Contraseña</label>
       <input type="password" class="text ui-widget-content ui-corner-all" id="password_confirm" name="password_confirm" placeholder=""  onkeyup="checkPass(); return false;" required>
   </div>
 
-<button type="submit" id="regBtn" class="form-control" name="register">create account</button>
+<button type="submit" id="regBtn" class="form-control" name="register">crear Cuenta</button>
         </div>
         </form>
       </div>
@@ -190,17 +190,17 @@ $(".modal-transparent").on('hidden.bs.modal', function () {
 
            <form enctype="multipart/form" action="index.php" method="POST" id="">
                    <div class="page-header">
-                     <center><h3 class="colors">Login</h3></center>
+                     <center><h3 class="colors">Inciar Sesion</h3></center>
                    </div>
              <label for=""></label>
              <input type="text" name="email" id="" placeholder="email" class="email">
 
              <label for=""></label>
-             <input type="password" name="password" id="" placeholder="password" class="pass">
+             <input type="password" name="password" id="" placeholder="Contraseña" class="pass">
 
-             <button type="submit" name="login">login</button>
+             <button type="submit" name="login">iniciar Sesion</button>
               <label for=""></label>
-              <button type="button" data-toggle="modal" data-target="#myModal">Sign Up</button>
+              <button type="button" data-toggle="modal" data-target="#myModal">Registrarse</button>
 
 
            </form>

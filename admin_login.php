@@ -34,14 +34,14 @@ require 'mysqlConnect.php';
 	  	<div class="container">
 
 		      <form class="form-login" action="admin_login.php" method="post">
-		        <h2 class="form-login-heading">sign in now</h2>
+		        <h2 class="form-login-heading">Inciar Sesion</h2>
 		        <div class="login-wrap">
 		            <input type="text" name="email" class="form-control" placeholder="email" autofocus>
 		            <br>
 		            <input type="password" name="password"  class="form-control" placeholder="Password">
               </br>
             </br>
-		            <button class="btn btn-theme btn-block" href="index.php" name='admin_login'  type="submit"><i class="fa fa-lock"></i> SIGN IN</button>
+		            <button class="btn btn-theme btn-block" href="index.php" name='admin_login'  type="submit"><i class="fa fa-lock"></i> Entrar</button>
 		          <!-- Modal -->
 		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
 		              <div class="modal-dialog">
@@ -72,7 +72,7 @@ require 'mysqlConnect.php';
     <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
     <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
     <script>
-        $.backstretch("assets/img/Smp.jpg", {speed: 500});
+        $.backstretch("assets/img/floginadmin.jpg", {speed: 500});
     </script>
     <?php
   if(isset($_POST['admin_login'])){
