@@ -12,7 +12,7 @@ require 'update_slots.php';
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>Parqueadero</title>
+    <title>Parqueo Unifranz</title>
     <link rel="icon" href="assets/img/ny.jpg" />
 
     <!-- Bootstrap core CSS -->
@@ -42,7 +42,7 @@ require 'update_slots.php';
       <header class="header black-bg">
 
             <!--logo start-->
-            <a href="index.php" class="logo"><b>Parqueadero</b></a>
+            <a href="index.php" class="logo"><b>Parqueo Unifranz</b></a>
             <!--logo end-->
 
         </header>
@@ -88,7 +88,7 @@ require 'update_slots.php';
                       <tr align="center">
                       <th>S.N </th>
                       <th>Ubicacion </th>
-                      <th>Calle </th>
+
                       <th>Nombre </th>
                       <th>Espacios </th>
                       <th>Precio </th>
