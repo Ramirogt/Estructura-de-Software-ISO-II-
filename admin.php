@@ -15,7 +15,7 @@ else {
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>Parqueo Unifranz</title>
+    <title>Parqueo </title>
     <link rel="icon" href="assets/img/ny.jpg" />
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
