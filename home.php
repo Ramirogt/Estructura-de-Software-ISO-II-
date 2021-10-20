@@ -16,7 +16,7 @@ else {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Smart Parking Web Portal</title>
+    <title>Parqueo Unifranz</title>
     <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -69,7 +69,7 @@ else {
       <div class="container">
          <div class="col-md-3"></div>
          <div class="col-md-8">
-                 <center><h1 class="colors"><a href="home.php" style="text-decoration: none; color:white;">Parqueadero</a></h1></center>
+                 <center><h1 class="colors"><a href="home.php" style="text-decoration: none; color:white;">Parqueo Unifranz</a></h1></center>
 
          </div>
          <div class="col-md-1"></div>
@@ -86,32 +86,13 @@ else {
                       <center>
                         <h3><?=$name?></h3>
                         <p>(<?=$email?>)</p>
-                        <p><i id="#online" class="fa fa-circle" aria-hidden="true"></i> Online</p>
-                        <p><a href="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i> lOGOUT</a></p>
+                        <p><i id="#online" class="fa fa-circle" aria-hidden="true"></i> En Linea</p>
+                        <p><a href="logout.php"><i class="fa fa-power-off" aria-hidden="true"></i> Cerrar Sesion</a></p>
                         </center>
                       </div>
                     </div>
              </li>
 
-             <li class="list-group-item" >
-               <select class="form-control" onchange="filter_park()" id="city">
-                 <option value="Norte">Norte</option>
-                 <option value="Sur">Sur</option>
-                 <option value="Este">Este</option>
-                 <option value="Oeste">Oeste</option>
-               </select>
-             </li>
-
-             <li class="list-group-item">
-               <select class="form-control" onchange="filter_park()" id="street">
-                 <option value="">----[Buscar Ubicacion]----</option>
-                 <option value="Calle 5">Calle 5</option>
-                 <option value="Calle 25">Calle 25</option>
-                 <option value="Calle 1">Calle 1</option>
-               </select>
-             </li>
-
-             <li class="list-group-item" id="requests"><a><span class="glyphicon glyphicon-envelope"></span> Notificaciones</a></li>
 
 
            </ul>

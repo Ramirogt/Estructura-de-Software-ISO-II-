@@ -15,7 +15,7 @@ else {
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>Parqueo</title>
+    <title>Parqueo Unifranz</title>
     <link rel="icon" href="assets/img/ny.jpg" />
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -39,14 +39,14 @@ else {
 }
 
 .left-links li a{
-    color:#b3e5fc !important;
+    color:#000000!important;
     font-weight:bold;
     font-family: tahoma;
-    border-bottom:1px solid #b2ebf2;
+    border-bottom:1px solid #000000;
 }
 
 .left-links li a:hover{
-    color:#ff5252 !important;
+    color:#FFFFFF !important;
 }
     </style>
   </head>
@@ -61,11 +61,11 @@ else {
       <header class="header black-bg">
 
             <!--logo start-->
-            <a href="index.php" class="logo"><b>Parqueo</b></a>
+            <a href="index.php" class="logo"><b>Parqueo Unifranz</b></a>
             <!--logo end-->
             <div class="top-menu">
             	<ul class="nav pull-right top-menu">
-                    <li><a class="logout" href="logout.php" style="background-color:#ffd777;">Cerrar sesión</a></li>
+                    <li><a class="logout" href="logout.php" style="background-color:#000000;">Cerrar sesión</a></li>
             	</ul>
             </div>
         </header>
@@ -80,18 +80,16 @@ else {
               <!-- sidebar menu start-->
               <ul class="sidebar-menu" id="nav-accordion">
 
-              	  <p class="centered"><a href="#"><img src="assets/img/assistant-144.png" class="img-circle" width="60"></a></p>
+              	  <p class="centered"><a href="#"><img src="assets/img/admin.jpg" class="img-circle" width="60"></a></p>
               	  <h5 class="centered"> <?php echo $_SESSION['email']; ?> </h5>
                      </ul>
                      <div class="list">
 
 
                   <ul class="left-links">
-                      <li><a  href="blank.php"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Agregar nuevo Parqueadero</a></li>
-                      <li><a  href="basic_table.php"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Parqueaderos</a></li>
-                      <li><a  href="attendant.php"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Agregar nuevo Asistente</a></li>
-                        <li><a  href="basic_table2.php"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Asistentes</a></li>
-                          <li><a  href="admin_request.php"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Requerimientos</a></li>
+                      <li><a  href="blank.php"><i  aria-hidden="true"></i> Agregar nueva zona </a></li>
+                      <li><a  href="basic_table.php"><i  aria-hidden="true"></i> Listado de Zonas</a></li>
+                          <li><a  href="admin_request.php"><i  aria-hidden="true"></i> Informacion de usuarios</a></li>
                   </ul>
                    </div>
 

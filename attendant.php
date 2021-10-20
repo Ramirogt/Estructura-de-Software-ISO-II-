@@ -12,7 +12,7 @@ session_start();
     <meta name="author" content="Dashboard">
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
-    <title>parqueo</title>
+    <title>parqueo Unifranz</title>
     <link rel="icon" href="assets/img/ny.jpg" />
 
     <!-- Bootstrap core CSS -->

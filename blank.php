@@ -38,7 +38,7 @@ session_start();
       <header class="header black-bg">
 
             <!--logo start-->
-            <a href="index.php" class="logo"><b>Parqueo</b></a>
+            <a href="index.php" class="logo"><b>Parqueo unifranz</b></a>
             <!--logo end-->
 
         </header>
@@ -72,61 +72,33 @@ session_start();
       <!--main content start-->
       <section id="main-content">
           <section class="wrapper site-min-height">
-          	<h3><i class="fa fa-angle-right"></i> Agregar Parqueadero</h3>
+          	<h3><i class="fa fa-angle-right"></i> Agregar nueva zona</h3>
           	<div class="row mt">
           		<div class="col-lg-12">
               <form class="form-horizontal" action="upload.php" method="POST" enctype="multipart/form-data">
         <div class="form-group">
           <div class="col-sm-10">
             <select name="location" class="form-control">
-                 <option value="Norte">Norte</option>
-                 <option value="Sur">Sur</option>
-                 <option value="Este">Este</option>
-                 <option value="Oeste">Oeste</option>
+                 <option value="Norte">Subterraneo</option>
+                 <option value="Sur">Superficie</option>
               </select>
           </div>
         </div>
         <div class="form-group">
           <div class="col-sm-10">
-             <input type="text" class="form-control"  placeholder="Direccion" name="street">
+            <input type="text" class="form-control" placeholder="Cantidad de Espacios" name="slot">
           </div>
         </div>
         <div class="form-group">
           <div class="col-sm-10">
-            <input type="text" class="form-control"  placeholder="Nombre del Parqueadero" name="name">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Numero de espacios" name="slot">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Numero de espacios faltantes" name="remaining_slots">
+            <input type="text" class="form-control" placeholder="Espacios disponibles" name="remaining_slots">
           </div>
         </div>
 
+       
         <div class="form-group">
           <div class="col-sm-10">
-              <select name="attendant" class="form-control">
-                <option value="">Seleccione Asistente</option>
-            <?php
-              $select = "SELECT * FROM `attendant`";
-              $result = mysqli_query($con, $select);
-              while($attendant = mysqli_fetch_array($result)){
-                ?>
-                  <option value="<?=$attendant['username']?>"><?=$attendant['Fname'].' '.$attendant['Lname']?></option>
-                <?php
-              }
-            ?>
-            </select>
-          </div>
-        </div>
-
-        <div class="form-group">
-          <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="Monto" name="price">
+            <input type="text" class="form-control" placeholder="Precio" name="price">
           </div>
         </div>
         <div class="form-group">

@@ -13,7 +13,7 @@ body {
   background: #999;
   padding: 40px;
   font-family: "Open Sans Condensed", sans-serif;
-  background: url(assets/img/Smp.jpg) no-repeat center center fixed;
+  background: url(assets/img/FondoU.png) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -26,7 +26,7 @@ body {
 
 <div class="panel-body">
 <div class="table-responsive col-md-6 col-md-offset-3">
-<a href="request.php" type="button" class="btn btn-primary btn-lg"><i class="fa fa-hand-o-left" aria-hidden="true"></i> Go Back To Requests</a>
+<a href="home.php" type="button" class="btn btn-primary btn-lg"><i class="fa fa-hand-o-left" aria-hidden="true"></i> Incio</a>
 <hr>
 <table class="table table-bordered table-hover" >
   <thead style="background: #000 !important; color: #fff;">
@@ -95,22 +95,15 @@ if ($ttotal>60) {
 ?>
 
 <tr>
-<td>Parking Name:</td>
+<td>Tipo de Parqueo:</td>
 <td><?=$parking; ?> Parking</td>
 </tr>
 
-<tr>
-<td>Served By:</td>
-<td><?=isset($fname)." ".isset($lname);?></td>
-</tr>
+
+
 
 <tr>
-<td>Parking location:</td>
-<td><?=$location; ?> Area</td>
-</tr>
-
-<tr>
-<td>Parking street:</td>
+<td>Localizacion:</td>
  <td><?=$street; ?> Street</td>
  </tr>
 
@@ -126,24 +119,22 @@ if ($ttotal>60) {
 
 <tr>
 <td>Dinero Cargado:</td>
-<td>COP. <?=$charge; ?></td>
+<td>Bs. <?=$charge; ?></td>
 </tr>
 
 <tr>
-<td>Request Time:</td>
+<td>Tiempo Requerido:</td>
 <td><?=$when; ?> </td>
 </tr>
 
-<tr>
-<td>Status:</td>
-<td><?php
+<?php
 if($totalt >= $hours){
     ?>
-      Time Was Exceeded by <?=$exceeded_time;?> Hours
+
     <?php
 }else{
     ?>
-      Met the time requirement
+      
     <?php
 }
 
@@ -182,9 +173,7 @@ if($totalt >= $hours){
 
              $(".table").DataTable({
                  dom: 'Brt',
-                 buttons: [
-                     'pdf', 'print'
-                 ]
+
              });
           }
           document.onready= function (){
