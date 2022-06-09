@@ -193,14 +193,15 @@ $(".modal-transparent").on('hidden.bs.modal', function () {
                      <center><h3 class="colors">Inciar Sesion</h3></center>
                    </div>
              <label for=""></label>
-             <input type="text" name="email" id="" placeholder="email" class="email">
+             <input type="text" name="email" id="emailUSer" placeholder="email" class="email">
 
              <label for=""></label>
-             <input type="password" name="password" id="" placeholder="Contraseña" class="pass">
+             <input type="password" name="password" id="passwordUser" placeholder="Contraseña" class="pass">
 
-             <button type="submit" name="login">iniciar Sesion</button>
+             <button type="submit" name="login" id = "login">iniciar Sesion</button>
               <label for=""></label>
-              <button type="button" data-toggle="modal" data-target="#myModal">Registrarse</button>
+              <a type="button" name = "button" id = "button" data-toggle="modal" data-target="#myModal">Registrarse</button>
+              <a href="index.php" id="LoginLink"> Login</a>
 
 
            </form>
